@@ -10,6 +10,8 @@ public class Member {
     private String username;
     private int age;
 
+    //자바 빈 규약을 지키기위해 기본 생성자도 추가. 없어도 동작은 되는듯?
+    // https://dololak.tistory.com/133
     public Member() {
     }
 
