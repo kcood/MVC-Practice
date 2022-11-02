@@ -39,6 +39,7 @@ public class FrontControllerServletV2 extends HttpServlet {
         }
         //문제없으면 url에 맞는, 오버라이드 된 메소드(form,save,list 컨트롤러 중) 호출
         MyView view = controller.process(request, response);
+
         view.render(request,response);
     }
 }
