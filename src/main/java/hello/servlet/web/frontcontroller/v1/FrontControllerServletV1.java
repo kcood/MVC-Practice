@@ -19,7 +19,7 @@ public class FrontControllerServletV1 extends HttpServlet {
     //맵핑 정보
     private Map<String/*url*/, ControllerV1/*url에 맞는 컨트롤러 호출*/> controllerMap = new HashMap<>();
 
-    //생성자
+    //생성자. 서블릿이 처음 생성될때, 각 url별로 맵핑 정보를 담기위해
     public FrontControllerServletV1() {
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
         controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
